@@ -52,6 +52,8 @@ if(keyDown("space"))  {
   
  ground.x=ground.width/2; 
  
+    survivalTime=Math.ceil(frameCount/frameRate())
+    
   if(background1.x<100 ){
 background1.x = background1.width/2;
   }
@@ -94,7 +96,6 @@ text("Score: "+ score,500,50)
 stroke("black")
 textSize(20)
 fill("black")
-survivalTime=Math.ceil(frameCount/frameRate())
 text("Survival Time : "+ survivalTime,100,50)
 }
 
